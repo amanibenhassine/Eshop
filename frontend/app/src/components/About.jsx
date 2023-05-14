@@ -1,16 +1,16 @@
 import React from 'react'
-import img1 from "../assets/casque.png"
+import img1 from "../assets/Microsoft.png"
 import "./About.css"
 
 function About() {
   return (
-    <div className='container'>
-    <div className='container-item'>
+    <div className='container-about'>
+    <div className='container-item-about'>
     <div className='text-item'>
-    <h1>Get the best product</h1>
-    <button type='onSubmit'>Click</button>
-    </div>
+   
     <img src={img1} alt='casque'/>
+     <h1>Get the best product</h1>
+    </div>
   </div>
   </div>
   )

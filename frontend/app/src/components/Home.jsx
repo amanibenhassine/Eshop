@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import img from "../assets/ecouter.png"
+import img1 from "../assets/casque.png"
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
       <h1>Get the best product</h1>
       <button type='onSubmit'>Click</button>
       </div>
-      <img src={img} alt='casque'/>
+      <img src={img1} alt='casque'/>
     </div>
     </div>
   )
