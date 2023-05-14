@@ -9,7 +9,7 @@ import About from './components/About'
 function App() {
 
   return (
-    <>
+    <div className='app'>
     <BrowserRouter>
 <Navbar />
 <Routes>
@@ -20,7 +20,7 @@ function App() {
 
     </BrowserRouter>
       
-    </>
+    </div>
   )
 }
 
