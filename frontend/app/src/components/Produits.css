@@ -1,6 +1,22 @@
 .produits{
-    margin:50px 60px;
+    margin:90px 60px;
+    background-color: rgb(253, 253, 253);
+    padding: 20px 10px;
+    border-radius: 20px;
+    min-height: 50vh;
+    
+}
+.produits h1{
+    color: black;
+    padding-left: 60px;
+}
+.listProduits{
     display: flex;
     justify-items: center;
-    padding-left: 10px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.listProduits Card{
+   
+    padding-top: 20px;
 }

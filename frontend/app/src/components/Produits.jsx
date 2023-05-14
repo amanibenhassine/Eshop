@@ -4,16 +4,34 @@ import casque from '../assets/casque.png'
 import "./Produits.css"
 
 const data=[{
-    image:'../assets/casque.png',
+    image:casque,
     title:'casque'
 },
 {
-    image:'../assets/casque.png',
+    image:casque,
     title:'casque2'
 },
 {
-    image:'../assets/casque.png',
+    image:casque,
     title:'casque3'
+},
+{
+  image:casque,
+  title:'casque3'
+},
+{
+  image:casque,
+  title:'casque3'
+},
+{
+  image:casque,
+  title:'casque3'
+},{
+  image:casque,
+  title:'casque3'
+},{
+  image:casque,
+  title:'casque3'
 },
 
 
@@ -23,14 +41,16 @@ const data=[{
 function Produits() {
   return (
     <div className='produits'>
+      <div className='titleProduits'><h1>Categorie</h1></div>
+      <div className='listProduits'>
         {
         data.map(cards =>
         <Card
-         imageItem={data.image}
-         title={data.title}
+         imageItem={cards.image}
+         title={cards.title}
         ></Card>)
         }
-        
+        </div>
     </div>
   )
 }
