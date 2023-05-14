@@ -1,0 +1,6 @@
+.produits{
+    margin:50px 60px;
+    display: flex;
+    justify-items: center;
+    padding-left: 10px;
+}
