@@ -7,6 +7,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Produits from './components/Produits'
 import Footer from './components/Footer'
+import Show from './components/Show'
 function App() {
 
   return (
@@ -19,6 +20,8 @@ function App() {
 
   </Route>
  <Route path="/About" element={<About />}></Route>
+ <Route path="/Show" element={<Show />}></Route>
+
  <Route path="/Produits" element={<Produits />}></Route>
  <Route path="/Footer" element={<Footer />}></Route>
 

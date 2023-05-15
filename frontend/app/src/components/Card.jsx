@@ -1,7 +1,10 @@
 import React from 'react'
 import "./Card.css"
+import {Link } from "react-router-dom"
+import Show from './Show'
 
 function Card({imageItem,title}) {
+ 
   return (
     <div className='Card'>
       <div className='cardImage'>
@@ -9,7 +12,7 @@ function Card({imageItem,title}) {
         </div>
         <div className='card-content'>
             <h2>{title}</h2>
-            <button btn btn-primary>Add to card</button>
+           <Link to="/Show"><button btn btn-primary >Add to card</button></Link> 
         </div>
 
 
