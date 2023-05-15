@@ -14,10 +14,10 @@ function Navbar() {
          
           <div className='navItem'>
           <div className='navItem-1'>
-           <Link to="/Home">Home</Link>
+           <Link to="/Home" style={{ textDecoration: 'none' , color:'black' }}>Home</Link>
            </div>
            <div className='navItem-1'>
-           <Link to="/About">About</Link>
+           <Link to="/About" style={{ textDecoration: 'none' , color:'black' }}>About</Link>
            </div>
            <div className='navItem-1'>
            <img src={panier}/>

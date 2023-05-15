@@ -12,12 +12,15 @@
   }
   .logo{
     padding-left: 35px;
-    color:#a5f0ec
+    color:black;
   }
  
   .navItem{
     list-style-type: none;
     display:flex;
+    text-decoration: none;
+    color:black;
+
   
   }
   
