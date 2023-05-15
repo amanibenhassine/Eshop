@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Produits from './components/Produits'
+import Footer from './components/Footer'
 function App() {
 
   return (
@@ -21,6 +22,7 @@ function App() {
 
 />
 <About />
+<Footer />
 
     </BrowserRouter>
       
