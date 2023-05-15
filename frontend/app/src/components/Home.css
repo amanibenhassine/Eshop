@@ -26,4 +26,6 @@
 
 .btnItem .btn  {
     margin-right: 10px;
+    border-radius: 10px;
+    height: 40px;
 }
