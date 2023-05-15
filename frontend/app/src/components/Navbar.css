@@ -1,0 +1,38 @@
+.navbar{
+    background-color:rgba(211, 215, 219, 0.12);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  
+  }
+  span{
+    color:#E96479;
+  }
+  .logo{
+    padding-left: 5px;
+  }
+  .navItem{
+    list-style-type: none;
+    display:flex;
+  
+  }
+  
+  .navItem-1{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+    display: inline-block;
+  }
+  .navItem-1::after{
+    content: '';
+    display:block;
+    height: 3px;
+    width: 0;
+    background-color: #E96479;
+    transition: all 0.5s;
+  }
+  .navItem-1:hover::after{
+    width: 100%;
+  
+  
+  }
