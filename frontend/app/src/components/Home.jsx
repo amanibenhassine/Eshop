@@ -8,10 +8,11 @@ function Home() {
       <div className='container-item'>
       <div className='text-item'>
       <h1>SHOP COMPUTERS & ACCESSORIES</h1>
-      <div className="btn">
-      <button type="button" className="btn btn-light">Light</button>
-      <button type="button" className="btn btn-outline-light">Warning</button>
-       </div>
+    
+      <div className="btnItem">
+      <button type="button" className="btn btn-light px-5">Light</button>
+      <button type="button" className="btn btn-outline-light px-5">Warning</button>
+       </div>  
       </div>
       <img src={img1} alt='casque'/>
     </div>
