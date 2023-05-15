@@ -7,8 +7,10 @@ function Home() {
     <div className='container'>
       <div className='container-item'>
       <div className='text-item'>
-      <h1>Get the best product</h1>
-      <button type='onSubmit'>Click</button>
+      <h1>SHOP COMPUTERS & ACCESSORIES</h1>
+      <button type="button" className="btn btn-light">Light</button>
+      <button type="button" className="btn btn-outline-light">Warning</button>
+
       </div>
       <img src={img1} alt='casque'/>
     </div>
