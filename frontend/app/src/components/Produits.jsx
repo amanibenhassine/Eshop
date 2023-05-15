@@ -73,7 +73,7 @@ const data=[{
 function Produits() {
   return (
     <div className='produits'>
-      <div className='titleProduits'><h1>Categorie</h1></div>
+      <div className='titleProduits'><h1>Top Products</h1></div>
       <div className='listProduits'>
         {
         data.map(cards =>

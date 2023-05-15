@@ -4,6 +4,8 @@ import Home from './Home'
 import About from './About'
 import "./Navbar.css"
 import panier from "../assets/panier.gif"
+import Produits from './Produits';
+import Footer from './Footer';
 
 function Navbar() {
   return (
@@ -17,7 +19,13 @@ function Navbar() {
            <Link to="/Home" style={{ textDecoration: 'none' , color:'black' }}>Home</Link>
            </div>
            <div className='navItem-1'>
+           <Link to="/Produits" style={{ textDecoration: 'none' , color:'black' }}>Products</Link>
+           </div>
+           <div className='navItem-1'>
            <Link to="/About" style={{ textDecoration: 'none' , color:'black' }}>About</Link>
+           </div>
+           <div className='navItem-1'>
+           <Link to="/Footer" style={{ textDecoration: 'none' , color:'black' }}>Contact</Link>
            </div>
            <div className='navItem-1'>
            <img src={panier}/>
