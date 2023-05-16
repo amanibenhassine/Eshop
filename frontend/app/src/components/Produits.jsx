@@ -13,6 +13,7 @@ import internet from '../assets/Internet.png'
 import HP_PC_Gamer from '../assets/HP_PC_Gamer.png'
 import Headphones from '../assets/Headphones.png'
 import ecouterblanch from '../assets/ecouterblanch.png'
+import Navbar from './Navbar'
 
 
 
@@ -72,6 +73,8 @@ const data=[{
 
 function Produits() {
   return (
+    <div>
+    
     <div className='produits'>
       <div className='titleProduits'><h1>Top Products</h1></div>
       <div className='listProduits'>
@@ -83,6 +86,7 @@ function Produits() {
         ></Card>)
         }
         </div>
+    </div>
     </div>
   )
 }

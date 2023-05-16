@@ -46,10 +46,15 @@ const Login = () => {
                 className="input"
                 
             />
-            <Link to="/Navbar">
+            <Link to="/Home">
             
             <button type="submit" className="green_btn">
             sign in
+            </button></Link>
+            <Link to="/Register">
+            
+            <button type="submit" className="green_btn">
+            sign UP
             </button></Link>
         </form>
     </div>

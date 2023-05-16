@@ -1,9 +1,15 @@
 import React from 'react'
 import "./Home.css"
 import img1 from "../assets/casque.png"
+import Produits from './Produits'
+import About from './About'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 function Home() {
   return (
+    <div>
+      
     <div className='container'>
       <div className='container-item'>
       <div className='text-item'>
@@ -16,6 +22,10 @@ function Home() {
       </div>
       <img src={img1} alt='casque'/>
     </div>
+    </div>
+    <Produits />
+    <About />
+    <Footer />
     </div>
   )
 }

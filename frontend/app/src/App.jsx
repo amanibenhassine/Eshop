@@ -34,9 +34,7 @@ function App() {
 
 
 </Routes>
-<Produits />
-<About />
-<Footer />
+
 
   
  
