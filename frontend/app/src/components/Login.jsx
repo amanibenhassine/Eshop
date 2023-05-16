@@ -1,10 +1,62 @@
-import React from 'react'
-import "./Login.css"
-
+import React ,{useState} from 'react'
+import "./Register.css"
+import axios from 'axios';
 const Login = () => {
-  return (
-    <div>Login</div>
-  )
+    const [data, setData] = useState({ email: "", password: "" });
+	const [error, setError] = useState("");
+
+	const handleChange = ({ currentTarget: input }) => {
+		setData({ ...data, [input.name]: input.value });
+	};
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const url = "/api/Login";
+			const { data: res } = await axios.post(url, data);
+			localStorage.setItem("token", res.data);
+			window.location = "/Home";
+		} catch (error) {
+		console.log(err)
+	};
 }
 
-export default Login
+
+  return (
+    <div>
+    <div className="signup_container" >
+        <form  onSubmit={handleSubmit} className='form_container'>
+            <h1>Login to Your Account</h1>
+         
+            <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                onChange={handleChange}
+                value={data.email}
+                required
+                className="input"
+            />
+            <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                onChange={handleChange}
+                value={data.password}
+                required
+                className="input"
+                
+            />
+            
+            <button type="submit" className="green_btn">
+                Sing Up
+            </button>
+        </form>
+    </div>
+</div>
+
+);
+  
+};
+
+export default Login;
