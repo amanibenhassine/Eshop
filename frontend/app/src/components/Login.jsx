@@ -1,6 +1,7 @@
 import React ,{useState} from 'react'
 import "./Register.css"
 import axios from 'axios';
+import {Link } from "react-router-dom"
 const Login = () => {
     const [data, setData] = useState({ email: "", password: "" });
 
