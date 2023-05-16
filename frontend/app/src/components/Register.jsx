@@ -35,17 +35,8 @@ const Register = () => {
 	};
   return (
    <div>
-			<div>
-				<div>
-					<h1>Welcome Back</h1>
-					<Link to="/login">
-						<button type="button" >
-							Sing in
-						</button>
-					</Link>
-				</div>
-				<div>
-					<form  onSubmit={handleSubmit}>
+				<div className="signup_container" >
+					<form  onSubmit={handleSubmit} className='form_container'>
 						<h1>Create Account</h1>
 						<input
 							type="text"
@@ -54,6 +45,7 @@ const Register = () => {
 							onChange={handleChange}
 							value={data.firstName}
 							required
+                            className="input"
 						/>
 						<input
 							type="text"
@@ -62,6 +54,7 @@ const Register = () => {
 							onChange={handleChange}
 							value={data.lastName}
 							required
+                            className="input"
 						/>
 						<input
 							type="email"
@@ -70,6 +63,7 @@ const Register = () => {
 							onChange={handleChange}
 							value={data.email}
 							required
+                            className="input"
 						/>
 						<input
 							type="password"
@@ -78,16 +72,17 @@ const Register = () => {
 							onChange={handleChange}
 							value={data.password}
 							required
+                            className="input"
 							
 						/>
 						
-						<button type="submit" className="styles.green_btn">
+						<button type="submit" className="green_btn">
 							Sing Up
 						</button>
 					</form>
 				</div>
 			</div>
-		</div>
+		
 	);
 };
  
