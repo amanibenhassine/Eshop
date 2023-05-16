@@ -49,7 +49,7 @@ const Login = () => {
             />
             
             <button type="submit" className="green_btn">
-                Sing Up
+            sign in
             </button>
         </form>
     </div>

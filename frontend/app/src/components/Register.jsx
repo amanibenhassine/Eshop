@@ -77,7 +77,7 @@ const Register = () => {
 						/>
 						
 						<button type="submit" className="green_btn">
-							Sing Up
+                        sign up
 						</button>
 					</form>
 				</div>
