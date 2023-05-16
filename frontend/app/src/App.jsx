@@ -34,6 +34,7 @@ function App() {
 <Produits />
 <About />
 <Footer />
+<Register />
 
     </BrowserRouter>
       
