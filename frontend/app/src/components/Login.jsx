@@ -3,7 +3,6 @@ import "./Register.css"
 import axios from 'axios';
 const Login = () => {
     const [data, setData] = useState({ email: "", password: "" });
-	const [error, setError] = useState("");
 
 	const handleChange = ({ currentTarget: input }) => {
 		setData({ ...data, [input.name]: input.value });
@@ -12,10 +11,10 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "/api/Login";
+			const url = '/api/login';
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
-			window.location = "/Home";
+			window.location = "/";
 		} catch (error) {
 		console.log(err)
 	};

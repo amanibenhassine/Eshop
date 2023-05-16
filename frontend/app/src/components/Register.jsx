@@ -25,7 +25,7 @@ const Register = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "/api/register";
+			const url = '/api/register';
 			const { data: res } = await axios.post(url, data);
 			navigate("/Login");
 			console.log(res.message);

@@ -17,5 +17,4 @@ app.use(cors());
 app.use("/api/login", loginRoutes);
 app.use("/api/register", registerRoutes);
 
-const port = process.env.PORT || 8080;
-app.listen(port, console.log(`server work`));
+app.listen("8080", console.log(`server work`));

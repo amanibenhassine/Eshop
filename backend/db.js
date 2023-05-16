@@ -6,10 +6,10 @@ module.exports = () => {
 		useUnifiedTopology: true,
 	};
 	try {
-		mongoose.connect(process.env.DB, connectionParams);
+		mongoose.connect("mongodb+srv://amani:amani123@cluster0.jytlg.mongodb.net/eshop?retryWrites=true&w=majority", connectionParams);
 		console.log("Connected to database successfully");
 	} catch (error) {
-		console.log(error);
+		
 		console.log("Could not connect database!");
 	}
 };
