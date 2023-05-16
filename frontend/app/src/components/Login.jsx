@@ -46,7 +46,7 @@ const Login = () => {
                 className="input"
                 
             />
-            <Link to="/Home">
+            <Link to="/Navbar">
             
             <button type="submit" className="green_btn">
             sign in

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Home from './Home'
-import About from './About'
 import "./Navbar.css"
 import panier from "../assets/panier.gif"
-import Produits from './Produits';
-import Footer from './Footer';
+
+
+
 
 function Navbar() {
   return (
+    <div>
 <div className='navbar'>    
         
         <div className='logo'><h3><span>E</span>Shop</h3></div>
@@ -32,8 +32,11 @@ function Navbar() {
            </div>
            </div>
          </div>
-   
-       </div>
+   </div>
+       
+
+
+</div>
 )
 }
 
