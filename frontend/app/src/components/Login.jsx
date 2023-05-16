@@ -14,7 +14,6 @@ const Login = () => {
 			const url = '/api/login';
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
-			window.location = "/";
 		} catch (error) {
 		console.log(err)
 	};
@@ -46,10 +45,11 @@ const Login = () => {
                 className="input"
                 
             />
+            <Link to="/Home">
             
             <button type="submit" className="green_btn">
             sign in
-            </button>
+            </button></Link>
         </form>
     </div>
 </div>
