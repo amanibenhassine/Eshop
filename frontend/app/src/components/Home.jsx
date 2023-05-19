@@ -16,8 +16,8 @@ function Home() {
       <h1>SHOP COMPUTERS & ACCESSORIES</h1>
     
       <div className="btnItem">
-      <button type="button" className="btn btn-light px-5">Light</button>
-      <button type="button" className="btn btn-outline-light px-5">Warning</button>
+      <button type="button" className="btn btn-light px-5">Shop Now</button>
+      <button type="button" className="btn btn-outline-light px-5">Read More</button>
        </div>  
       </div>
       <img src={img1} alt='casque'/>
