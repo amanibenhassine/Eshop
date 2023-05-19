@@ -21,50 +21,74 @@ import Navbar from './Navbar'
 
 const data=[{
     image:ecouterblanch,
-    title:'ecouterblanch'
+    title:'ecouterblanch',
+    rating: 4,
+
 },
 {
     image:Headphones,
-    title:'casque2'
+    title:'casque2',
+    rating: 4,
+
 },
 {
     image:HP_PC_Gamer,
-    title:'casque3'
+    title:'casque3',
+    rating: 4,
+
 },
 {
   image:internet,
-  title:'casque3'
+  title:'casque3',
+  rating: 4,
+
 },
 {
   image:iPhone_13,
-  title:'casque3'
+  title:'casque3',
+  rating: 4,
+
 },
 {
   image:kwmobile,
-  title:'casque3'
+  title:'casque3',
+  rating: 4.5,
+
 },{
   image:MSI_PC_Gamer,
-  title:'casque3'
+  title:'casque3',
+  rating: 4,
+
 },
 {
   image: MSI_PC_Portable_Gamer,
-  title:'casque3'
+  title:'casque3',
+  rating: 4,
+
 },
 {
   image:Ordinateur,
-  title:'casque3'
+  title:'casque3',
+  rating: 4.5,
+
 },
 {
   image:phone2,
-  title:'casque3'
+  title:'casque3',
+  rating: 4,
+
 },
 {
   image:Samsung_Galaxy_Z,
-  title:'casque3'
+  title:'casque3',
+  rating: 3.5,
+
 },
 {
   image:smartwatch,
-  title:'casque3'
+  title:'casque3',
+  rating: 5,
+
 },
 
 
@@ -78,13 +102,14 @@ function Produits() {
     <div className='produits'>
       <div className='titleProduits'><h1>Top Products</h1></div>
       <div className='listProduits'>
+       
         {
         data.map(cards =>
         <Card
-         imageItem={cards.image}
-         title={cards.title}
+        items={cards}
         ></Card>)
         }
+       
         </div>
     </div>
     </div>

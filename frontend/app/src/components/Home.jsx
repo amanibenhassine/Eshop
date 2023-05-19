@@ -5,6 +5,7 @@ import Produits from './Produits'
 import About from './About'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import {Link} from "react-router-dom"
 
 function Home() {
   return (
@@ -16,8 +17,8 @@ function Home() {
       <h1>SHOP COMPUTERS & ACCESSORIES</h1>
     
       <div className="btnItem">
-      <button type="button" className="btn btn-light px-5">Shop Now</button>
-      <button type="button" className="btn btn-outline-light px-5">Read More</button>
+      <Link to="/produits" ><button type="button" className="btn btn-light px-5">Shop Now</button></Link>
+     <Link to="#"> <button type="button" className="btn btn-outline-light px-5">Read More</button></Link>
        </div>  
       </div>
       <img src={img1} alt='casque'/>
