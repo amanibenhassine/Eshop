@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect ,useState} from 'react'
 import Card from "./Card"
 import "./Produits.css"
 import smartwatch from '../assets/smartwatch.jpg'
@@ -116,6 +116,24 @@ const data=[{
 ]
 
 function Produits() {
+
+const[items, setItems] = useState([]);
+
+const getAllProducts=()=>{
+  
+return fetch('https://dummyjson.com/products')
+.then(res => res.json())
+}
+    
+
+useEffect(()=>{
+
+getAllProducts()
+.then((res)=>
+{setItems(res.products);
+})
+})
+
   return (
     <div>
     
@@ -124,9 +142,9 @@ function Produits() {
       <div className='listProduits'>
        
         {
-        data.map(cards =>
+        items.map(cards =>
         <Card
-        items={cards}
+        item={cards}
         ></Card>)
         }
        
