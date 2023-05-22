@@ -22,71 +22,91 @@ import Navbar from './Navbar'
 const data=[{
     image:ecouterblanch,
     title:'ecouterblanch',
+    description:"",
     rating: 4,
 
 },
 {
     image:Headphones,
     title:'casque2',
+    description:"",
     rating: 4,
 
 },
 {
     image:HP_PC_Gamer,
-    title:'casque3',
+    title:'PC HP 15-DW4005NK I5 12È',
+    description:"Processeur: Intel Core i5-1235U",
+    price:1969,
     rating: 4,
 
 },
 {
   image:internet,
   title:'casque3',
+  description:"",
   rating: 4,
 
 },
 {
   image:iPhone_13,
-  title:'casque3',
+  title:' IPHONE 13',
+  description:" Processeur: Apple A15 Bionic ",
+  price:4.299,
+
   rating: 4,
 
 },
 {
   image:kwmobile,
   title:'casque3',
+  description:"",
   rating: 4.5,
 
 },{
   image:MSI_PC_Gamer,
-  title:'casque3',
+  title:'PC GAMER MSI',
+  description:"Processeur: i7-11400H",
+  price: 2.749,
   rating: 4,
 
 },
 {
   image: MSI_PC_Portable_Gamer,
-  title:'casque3',
+  title:'PC GAMER MSI KATANA I7',
+  description:"MSI KATANA B12VGK-416XFR",
+  price:5.879,
   rating: 4,
 
 },
 {
   image:Ordinateur,
-  title:'casque3',
+  title:'PC ACER EXTENSA 15 I3 ',
+  description:"Processeur : Intel® Core i3-1115G4 ",
+  price:1955,
   rating: 4.5,
 
 },
 {
   image:phone2,
-  title:'casque3',
+  title:'IPHONE 14',
+  description:"Écran Super Retina XDR 6,1 pouces2",
+  price:5.269,
   rating: 4,
 
 },
 {
   image:Samsung_Galaxy_Z,
-  title:'casque3',
-  rating: 3.5,
+  title:'Galaxy Z Flip4 ',
+  description:"processeur:3.18GHz, 2.7GHz, 2GHz",
+  price:999,
+  rating: 5,
 
 },
 {
   image:smartwatch,
   title:'casque3',
+  description:"",
   rating: 5,
 
 },
