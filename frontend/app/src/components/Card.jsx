@@ -6,7 +6,7 @@ import { Rate } from 'antd';
 
 
 function Card({item}) {
-  const {image,title,price,rating} =item;
+  const {image,title,description,price,rating} =item;
  
   return (
  
@@ -18,6 +18,7 @@ function Card({item}) {
         <div className='card-content'>
             <h5>{title}</h5>
             <h6>price:${price}</h6>
+            <p>{description}</p>
        
           
             <Rate allowHalf defaultValue={rating} />
