@@ -15,32 +15,7 @@ import Headphones from '../assets/Headphones.png'
 import ecouterblanch from '../assets/ecouterblanch.png'
 import Navbar from './Navbar'
 
-
-
-
-
-const data=[{
-    image:ecouterblanch,
-    title:'ecouterblanch',
-    description:"",
-    rating: 4,
-
-},
-{
-    image:Headphones,
-    title:'casque2',
-    description:"",
-    rating: 4,
-
-},
-{
-    image:HP_PC_Gamer,
-    title:'PC HP 15-DW4005NK I5 12È',
-    description:"Processeur: Intel Core i5-1235U",
-    price:1969,
-    rating: 4,
-
-},
+/*
 {
   image:internet,
   title:'casque3',
@@ -110,27 +85,27 @@ const data=[{
   rating: 5,
 
 },
+*/
 
 
 
-]
+
+
+
 
 function Produits() {
 
 const[items, setItems] = useState([]);
+const getAllProducts=async()=>{
+return fetch ('https://fakestoreapi.com/products')
+ .then(res => res.json());
 
-const getAllProducts=()=>{
-  
-return fetch('https://dummyjson.com/products')
-.then(res => res.json())
 }
-    
-
 useEffect(()=>{
 
 getAllProducts()
 .then((res)=>
-{setItems(res.products);
+{setItems(res);
 })
 })
 
@@ -144,6 +119,7 @@ getAllProducts()
         {
         items.map(cards =>
         <Card
+        key={cards.id}
         item={cards}
         ></Card>)
         }
