@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-column">
         <h4>About Us</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum nunc at elit lacinia, in faucibus risus consectetur.</p>
+        <p>Welcome to our E-Shop! We are an online store dedicated to providing a convenient and enjoyable shopping experience for our customers. At our E-Shop, we offer a wide range of products from various categories, ensuring that there's something for everyone.</p>
       </div>
       <div className="footer-column">
         <h4>Contact Us</h4>

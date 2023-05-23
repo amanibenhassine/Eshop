@@ -22,7 +22,7 @@ function App() {
   
     <BrowserRouter>
     
-    
+    <Navbar />
    
   <Routes>
     <Route path='/' element={<Login />}></Route>
@@ -38,7 +38,7 @@ function App() {
 
 
 </Routes>
-<Navbar />
+
 
 
 

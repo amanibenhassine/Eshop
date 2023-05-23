@@ -9,8 +9,8 @@ import {Link} from "react-router-dom"
 
 function Home() {
   return (
+    
     <div>
-      
     <div className='container'>
       <div className='container-item'>
       <div className='text-item'>
