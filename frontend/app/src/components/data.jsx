@@ -31,7 +31,7 @@ products :[
       price: 2.099,
       quantity:1,
 
-      rating: 4.7
+      rating:3.2
     },
     {
       id:3,
@@ -39,7 +39,7 @@ products :[
       title: "HP PC Gamer",
       price: 3499,
       quantity:1,
-      rating: 4.5
+      rating: 3.7
     },
     {
       id:4,
@@ -47,7 +47,7 @@ products :[
       title: "SAMSUNG GALAXY Z",
       price: 1499,
       quantity:1,
-      rating: 4.5
+      rating: 5
     },
     {
       id:5,
@@ -55,7 +55,7 @@ products :[
       title: "iPhone_13",
       price: 3299,
       quantity:1,
-      rating: 4.7
+      rating: 4
     },
     {
       id:6,
@@ -111,7 +111,7 @@ products :[
       title: "Appel AirPods" ,
       price: 255,
       quantity:1,
-      rating: 3.5
+      rating: 3
     },
   ]
 };

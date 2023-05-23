@@ -15,13 +15,14 @@ import Register from './components/Register'
 
 
 function App() {
+ 
 
   return (
     <div className='app'>
   
     <BrowserRouter>
     
-    <Navbar />
+    
    
   <Routes>
     <Route path='/' element={<Login />}></Route>
@@ -37,16 +38,16 @@ function App() {
 
 
 </Routes>
+<Navbar />
 
 
-  
- 
+
 
 
     </BrowserRouter>
       
-    </div>
-  )
-}
-
+   
+ 
+</div>
+)}
 export default App
