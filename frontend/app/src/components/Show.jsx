@@ -3,22 +3,25 @@ import img1 from "../assets/ecouter.png"
 import "./Show.css"
 import { List } from 'antd'
 import data from "./data"
+import { useCart } from 'react-use-cart';
 
 
-function Show({cart,cartId}) {
-  const products =data.products;
 
-  const product = products.find(product => product.id === cartId);
-
-  if (!product) {
-    return <div>Product not found</div>;
-  }
+function Show() {
+  const { cartTotal, totalUniqueItems, items } = useCart();
 
   return (
     <div>
-      <h2>{product.name}</h2>
-      <p>{product.description}</p>
-      {/* Render other product details */}
+      <h2>Cart</h2>
+      <p>Total Items: {totalUniqueItems}</p>
+      <p>Total Price: ${cartTotal}</p>
+      <ul>
+        {items.map(item => (
+          <li key={item.id}>
+            {item.name} - ${item.price} - Quantity: {item.quantity}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

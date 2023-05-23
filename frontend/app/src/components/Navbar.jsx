@@ -6,7 +6,7 @@ import panier from "../assets/panier.gif"
 
 
 
-function Navbar() {
+function Navbar({cart}) {
   return (
     <div>
 <div className='navbar'>    
@@ -28,7 +28,7 @@ function Navbar() {
            <Link to="/Footer" style={{ textDecoration: 'none' , color:'black' }}>Contact</Link>
            </div>
            <div className='navItem-1'>
-          <Link to="/Show"><img src={panier}/></Link>
+          <Link to="/Show" cart={cart}><img src={panier}/></Link>
            </div>
            </div>
          </div>

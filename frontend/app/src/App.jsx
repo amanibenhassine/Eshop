@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import './App.css'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
+import {  CartProvider} from 'react-use-cart'
 
 import Login from './components/Login'
 import Navbar from './components/Navbar'
@@ -19,7 +20,9 @@ function App() {
     <div className='app'>
   
     <BrowserRouter>
+    
     <Navbar />
+   
   <Routes>
     <Route path='/' element={<Login />}></Route>
     <Route path='/Navbar' element={<Navbar/>}></Route>

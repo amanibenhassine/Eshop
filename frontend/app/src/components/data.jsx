@@ -17,13 +17,14 @@ import ecouterblanch from '../assets/ecouterblanch.png'
 const data ={
 products :[
     {
+      id:1,
       image: Ordinateur,
       title: "Dell XPS 13",
       description: "13.3-inch Laptop, Intel Core i7, 16GB RAM, 512GB SSD",
       price: 1499,
       rating: 4.5
     },
-    {
+    { id:2,
       image:Headphones, // Empty or undefined
       title: "iPhone 12 Pro",
       description: "6.1-inch Super Retina XDR Display, 128GB, Pacific Blue",

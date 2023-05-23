@@ -7,9 +7,11 @@ import { Rate } from 'antd';
 
 
 
-function Card({item,handlClick}) {
+function Card({item,handleAddToCart}) {
+
 
   const {image,title,description,price,rating} =item;
+  const {addItem} = useCart();
 
   return (
  
@@ -25,7 +27,7 @@ function Card({item,handlClick}) {
        
           
             <Rate allowHalf defaultValue={rating} />
-            <button className="btn" onClick= {() =>handlClick (item)} >Add to card</button>
+            <button className="btn" onClick= {()=>addItem(item)} >Add to card</button>
         </div>
 
 

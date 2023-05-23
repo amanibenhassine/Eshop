@@ -1,11 +1,12 @@
 import React, { useEffect ,useState} from 'react'
 import Card from "./Card"
 import "./Produits.css"
+import "./Show"
 
 import Navbar from './Navbar'
 import data from "./data"
 
-import { CartProvider, useCart } from "react-use-cart";
+import {  useCart } from "react-use-cart";
 
 
 
@@ -18,11 +19,18 @@ function Produits() {
 const [cart ,setCart]=useState([]);
  const products =data.products;
 
- const handlClick =(item)=>{
-
-  setCart([...cart, item]); 
+ /*const handlClick =(item,index)=>{
+;
+  setCart([...cart, item,index]) 
   console.log(item)
  }
+ const {addItem} = useCart();
+ const handleAddToCart = ({item}) => {
+  
+  addItem (item) 
+  console.log(item);
+
+ };*/
 
 
   return (
@@ -37,7 +45,9 @@ const [cart ,setCart]=useState([]);
         <Card
         key={index}
         item={item}
-        handlClick ={handlClick }
+      
+        
+       
 
         ></Card>)
         }
