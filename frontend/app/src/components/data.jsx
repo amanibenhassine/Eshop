@@ -20,7 +20,7 @@ products :[
       id:1,
       image: Ordinateur,
       title: "Dell XPS 13",
-      description: "13.3-inch Laptop, Intel Core i7, 16GB RAM, 512GB SSD",
+      description: "13.3-inch",
       price: 1499,
       quantity:1,
       rating: 4.5
@@ -28,12 +28,85 @@ products :[
     { id:2,
       image:Headphones, // Empty or undefined
       title: "iPhone 12 Pro",
-      description: "6.1-inch Super Retina XDR Display, 128GB, Pacific Blue",
+      description: "6",
       price: 999,
       quantity:1,
 
       rating: 4.7
-    }
+    },
+    {
+      id:3,
+      image: HP_PC_Gamer,
+      title: "Dell XPS 13",
+      description: "13.3",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:4,
+      image: internet,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:5,
+      image: iPhone_13,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:6,
+      image: kwmobile,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:7,
+      image: MSI_PC_Gamer,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:8,
+      image: MSI_PC_Portable_Gamer,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:9,
+      image: phone2,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:10,
+      image: Samsung_Galaxy_Z,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
+    {
+      id:11,
+      image: smartwatch,
+      title: "Dell XPS 13",
+      price: 1499,
+      quantity:1,
+      rating: 4.5
+    },
   ]
 };
 export default data;

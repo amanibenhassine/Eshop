@@ -20,10 +20,10 @@ const Footer = () => {
       <div className="footer-column">
         <h4>Categories</h4>
         <ul>
-          <li><a href="#">Electronics</a></li>
-          <li><a href="#">Clothing</a></li>
-          <li><a href="#">Home & Kitchen</a></li>
-          <li><a href="#">Books</a></li>
+          <li><a href="#">Pc Gamer</a></li>
+          <li><a href="#">Smart Watch</a></li>
+          <li><a href="#">HeadPhone</a></li>
+          <li><a href="#">Phone</a></li>
         </ul>
       </div>
     </div>
