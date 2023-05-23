@@ -45,10 +45,6 @@ const [cart ,setCart]=useState([]);
         <Card
         key={index}
         item={item}
-      
-        
-       
-
         ></Card>)
         }
        

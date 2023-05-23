@@ -15,13 +15,18 @@ function Show() {
       <h2>Cart</h2>
       <p>Total Items: {totalUniqueItems}</p>
       <p>Total Price: ${cartTotal}</p>
-      <ul>
+      <table>
         {items.map(item => (
-          <li key={item.id}>
-            {item.name} - ${item.price} - Quantity: {item.quantity}
-          </li>
+          <tr key={item.id}>
+            <td>
+              <img src={item.image} alt={item.title}/>
+           </td> 
+           <td>{item.title}</td> 
+            <td>${item.price}</td> 
+            <td>Quantity: {item.quantity}</td> 
+          </tr>
         ))}
-      </ul>
+      </table>
     </div>
   );
 }
