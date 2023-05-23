@@ -8,11 +8,11 @@ import { useCart } from 'react-use-cart';
 
 
 function Show() {
-  const { cartTotal, totalUniqueItems, items } = useCart();
+  const { cartTotal, totalUniqueItems,updateItemQuantity, removeItem,items } = useCart();
 
   return (
-    <div>
-      <h2>Cart</h2>
+    <div className='container-show'>
+      <div className='title-show'><h2>Cart</h2></div>
       <p>Total Items: {totalUniqueItems}</p>
       <p>Total Price: ${cartTotal}</p>
       <table>
@@ -23,7 +23,15 @@ function Show() {
            </td> 
            <td>{item.title}</td> 
             <td>${item.price}</td> 
-            <td>Quantity: {item.quantity}</td> 
+            <td>Quantity: {item.quantity}</td>
+            <td>
+              <button className='button' onClick={()=>updateItemQuantity(item.id,item.quantity +1)}>+</button>
+              <button className='button'onClick={()=>updateItemQuantity(item.id,item.quantity -1)}>-</button>
+              <button className='buttonRemove'onClick={()=>removeItem(item.id)}>Remove</button>
+
+
+            </td> 
+ 
           </tr>
         ))}
       </table>
