@@ -1,0 +1,20 @@
+version: '3'
+services:
+ backend:
+     image: node:20
+     container_name: backend
+     working_dir: /backend
+     command: npm start
+     ports: 
+     - "8080:8080"
+     volumes:
+      - "./backend/:/backend"     
+ frontend:
+     image: node:20
+     container_name: frontend
+     working_dir: /frontend
+     command: npm start
+     ports:
+      - "5000:5173"
+     volumes:
+      - "./frontend/app/:/frontend"
