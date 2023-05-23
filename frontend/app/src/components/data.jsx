@@ -9,7 +9,8 @@ import iPhone_13 from '../assets/iPhone_13.png'
 import internet from '../assets/Internet.png'
 import HP_PC_Gamer from '../assets/HP_PC_Gamer.png'
 import Headphones from '../assets/Headphones.png'
-import ecouterblanch from '../assets/ecouterblanch.png'
+import iPhone from '../assets/iPhone.png'
+import Airpod from '../assets/airpod.png'
 
 
 
@@ -19,14 +20,14 @@ products :[
     {
       id:1,
       image: Ordinateur,
-      title: "ACER ",
+      title: "ACER PC ",
       price: 1699,
       quantity:4,
       rating: 3.5
     },
     { id:2,
       image:Headphones, 
-      title: "iPhone 12 Pro",
+      title: "AirPods Pro 2",
       price: 2.099,
       quantity:1,
 
@@ -35,7 +36,7 @@ products :[
     {
       id:3,
       image: HP_PC_Gamer,
-      title: "HPPC Gamer",
+      title: "HP PC Gamer",
       price: 3499,
       quantity:1,
       rating: 4.5
@@ -82,7 +83,7 @@ products :[
     },
     {
       id:9,
-      image: phone2,
+      image: iPhone,
       title: "Iphone",
       price: 3799,
       quantity:1,
@@ -101,6 +102,14 @@ products :[
       image: smartwatch,
       title: "Smart Watch" ,
       price: 199,
+      quantity:1,
+      rating: 3.5
+    },
+    {
+      id:12,
+      image: Airpod,
+      title: "Appel AirPods" ,
+      price: 255,
       quantity:1,
       rating: 3.5
     },
