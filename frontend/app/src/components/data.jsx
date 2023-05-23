@@ -19,17 +19,15 @@ products :[
     {
       id:1,
       image: Ordinateur,
-      title: "Dell XPS 13",
-      description: "13.3-inch",
-      price: 1499,
-      quantity:1,
-      rating: 4.5
+      title: "ACER ",
+      price: 1699,
+      quantity:4,
+      rating: 3.5
     },
     { id:2,
-      image:Headphones, // Empty or undefined
+      image:Headphones, 
       title: "iPhone 12 Pro",
-      description: "6",
-      price: 999,
+      price: 2.099,
       quantity:1,
 
       rating: 4.7
@@ -37,16 +35,15 @@ products :[
     {
       id:3,
       image: HP_PC_Gamer,
-      title: "Dell XPS 13",
-      description: "13.3",
-      price: 1499,
+      title: "HPPC Gamer",
+      price: 3499,
       quantity:1,
       rating: 4.5
     },
     {
       id:4,
       image: internet,
-      title: "Dell XPS 13",
+      title: "SAMSUNG GALAXY Z",
       price: 1499,
       quantity:1,
       rating: 4.5
@@ -54,58 +51,58 @@ products :[
     {
       id:5,
       image: iPhone_13,
-      title: "Dell XPS 13",
-      price: 1499,
+      title: "iPhone_13",
+      price: 3299,
       quantity:1,
-      rating: 4.5
+      rating: 4.7
     },
     {
       id:6,
       image: kwmobile,
-      title: "Dell XPS 13",
-      price: 1499,
+      title: "KW MOBILE",
+      price: 1203,
       quantity:1,
       rating: 4.5
     },
     {
       id:7,
       image: MSI_PC_Gamer,
-      title: "Dell XPS 13",
-      price: 1499,
+      title: "MSI PC Gamer 17.3",
+      price: 3109,
       quantity:1,
       rating: 4.5
     },
     {
       id:8,
       image: MSI_PC_Portable_Gamer,
-      title: "Dell XPS 13",
-      price: 1499,
+      title: "MSI PC Gamer GF65",
+      price: 4939,
       quantity:1,
       rating: 4.5
     },
     {
       id:9,
       image: phone2,
-      title: "Dell XPS 13",
-      price: 1499,
+      title: "Iphone",
+      price: 3799,
       quantity:1,
-      rating: 4.5
+      rating: 4
     },
     {
       id:10,
       image: Samsung_Galaxy_Z,
-      title: "Dell XPS 13",
-      price: 1499,
+      title: "Samsung_Galaxy_Z",
+      price: 2955,
       quantity:1,
       rating: 4.5
     },
     {
       id:11,
       image: smartwatch,
-      title: "Dell XPS 13",
-      price: 1499,
+      title: "Smart Watch" ,
+      price: 199,
       quantity:1,
-      rating: 4.5
+      rating: 3.5
     },
   ]
 };
