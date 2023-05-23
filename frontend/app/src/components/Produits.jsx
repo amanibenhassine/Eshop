@@ -5,6 +5,7 @@ import "./Produits.css"
 import Navbar from './Navbar'
 import data from "./data"
 
+import { CartProvider, useCart } from "react-use-cart";
 
 
 
@@ -14,9 +15,14 @@ import data from "./data"
 
 function Produits() {
 
-  
+const [cart ,setCart]=useState([]);
  const products =data.products;
 
+ const handlClick =(item)=>{
+
+  setCart([...cart, item]); 
+  console.log(item)
+ }
 
 
   return (
@@ -27,10 +33,12 @@ function Produits() {
       <div className='listProduits'>
        
         {
-        products.map((cards,index)=>
+        products.map((item,index)=>
         <Card
         key={index}
-        item={cards}
+        item={item}
+        handlClick ={handlClick }
+
         ></Card>)
         }
        

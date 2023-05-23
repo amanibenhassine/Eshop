@@ -28,7 +28,7 @@ function Navbar() {
            <Link to="/Footer" style={{ textDecoration: 'none' , color:'black' }}>Contact</Link>
            </div>
            <div className='navItem-1'>
-           <img src={panier}/>
+          <Link to="/Show"><img src={panier}/></Link>
            </div>
            </div>
          </div>
